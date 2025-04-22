@@ -68,6 +68,11 @@ class Mixture
       //! \param     eosVap             pointer to equation of state of vapor phase
       double computeCriticalPressure(const Eos* eosLiq, const Eos* eosVap);
 
+      // New three-phase function declarations
+      double computeTsat(const Eos* eosLiq, const Eos* eosVap, const Eos* eosGas, const double& pressure, double* dTsat = 0);
+      double computePsat(const Eos* eosLiq, const Eos* eosVap, const Eos* eosGas, const double& temp);
+      double computeCriticalPressure(const Eos* eosLiq, const Eos* eosVap, const Eos* eosGas);
+
       //! \brief     Copy mixture attributes in mixture
       //! \param     mixture      destination mixture variable 
       virtual void allocateAndCopyMixture(Mixture** /*mixture*/) { Errors::errorMessage("allocateAndCopyMixture not available for requested mixture"); };

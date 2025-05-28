@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<parametersEOS>
+    <EOS type="PR"/>
+    <parameters
+        Tc="304.2"
+        Pc="73777300"
+        omega="0.225"
+        cv="656.0"
+    />
+    <physicalParameters
+        mu="7.0e-5"
+        lambda="0.015"
+    />
+</parametersEOS>
+

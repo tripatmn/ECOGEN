@@ -37,7 +37,7 @@
 #include "../libTierces/tinyxml2.h"
 
 //! \brief     Enumeration for the type of EOS (IG: ideal gas, SG: stiffened gas, NASG: Noble-Abel stiffened gas, VDW: Van Der Waals, Polynomial)
-enum TypeEOS { IG, SG, NASG, VDW, Polynomial };
+enum TypeEOS { IG, SG, NASG, VDW, Polynomial, PERFECTGAS, PR };
 
 class Eos; //Predeclaration of class to include following .h
 

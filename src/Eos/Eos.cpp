@@ -48,20 +48,17 @@ Eos::~Eos(){}
 
 //***********************************************************************
 
-void Eos::readPhysicalParameters(XMLNode *element)
-{
+void Eos::readPhysicalParameters(XMLNode *element) {
   XMLError error;
 
   XMLElement* sousElement(element->FirstChildElement("physicalParameters"));
   if (sousElement != NULL) {
-    //Gathering data
     error = sousElement->QueryDoubleAttribute("mu", &m_mu);
     if (error != XML_NO_ERROR) m_mu = -1.;
     error = sousElement->QueryDoubleAttribute("lambda", &m_lambda);
     if (error != XML_NO_ERROR) m_lambda = -1.;
   }
 }
-
 //***********************************************************************
 
 double Eos::computeEnthalpy(const double& density, const double& pressure) const
@@ -96,3 +93,4 @@ void Eos::assignEpsilonForAlphaNull(bool alphaNull) const
 }
 
 //***********************************************************************
+

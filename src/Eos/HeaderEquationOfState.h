@@ -36,6 +36,8 @@
 #include "EosNASG.h"
 #include "EosVDW.h"
 #include "EosPolynomial.h"
+#include "EosPerfectGas.h"
+#include "EosPR.h"
 
 //Add here headers for new equations of state
 
